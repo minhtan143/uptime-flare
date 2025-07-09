@@ -1,63 +1,40 @@
-<div align="right">
-  <a title="English" href="README.md"><img src="https://img.shields.io/badge/-English-A31F34?style=for-the-badge" alt="English" /></a>
-  <a title="简体中文" href="README_zh-CN.md"><img src="https://img.shields.io/badge/-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-545759?style=for-the-badge" alt="简体中文"></a>
-</div>
-
-# ✔[UptimeFlare](https://github.com/lyc8503/UptimeFlare)
+# ✔ [UptimeFlare](https://github.com/lyc8503/UptimeFlare)
 
 A more advanced, serverless, and free uptime monitoring & status page solution, powered by Cloudflare Workers, complete with a user-friendly interface.
 
-## ⭐Features
+# UptimeFlare Status Page
 
-- Open-source, easy to deploy (in under 10 minutes, no local tools required), and free
-- Monitoring capabilities
-  - Up to 50 checks at 1-minute intervals
-  - Geo-specific checks from over [310 cities](https://www.cloudflare.com/network/) worldwide
-  - Support for HTTP/HTTPS/TCP port monitoring
-  - Up to 90-day uptime history and uptime percentage tracking
-  - Customizable request methods, headers, and body for HTTP(s)
-  - Custom status code & keyword checks for HTTP(s)
-  - Downtime notification supporting [100+ notification channels](https://github.com/caronc/apprise/wiki)
-  - Customizable Webhook
-- Status page
-  - Interactive ping (response time) chart for all types of monitors
-  - Responsive UI that adapts to your system theme
-  - Customizable status page
-  - Use your own domain with CNAME
-  - Optional password authentication (private status page)
-  - JSON API for fetching realtime status data
+A modern, serverless uptime monitoring and status page solution, powered by Cloudflare Workers. This project uses the [UptimeFlare](https://github.com/lyc8503/UptimeFlare) template for easy deployment and advanced monitoring features.
 
-## 👀Demo
+## 🌐 My Status Page
 
-My status page (Online demo): https://uptimeflare.pages.dev/
+Check the live status page here: [https://uptime.minhtanit.com](https://uptime.minhtanit.com)
 
-Some screenshots:
+## 🚀 Features (via UptimeFlare)
+
+- Free, open-source, and easy to deploy (no local tools required)
+- Monitor up to 50 endpoints at 1-minute intervals
+- Geo-specific checks from 310+ cities worldwide
+- HTTP/HTTPS/TCP port monitoring
+- 90-day uptime history and percentage tracking
+- Custom request methods, headers, and body for HTTP(s)
+- Custom status code & keyword checks
+- Downtime notifications via [100+ channels](https://github.com/caronc/apprise/wiki)
+- Customizable Webhook support
+- Interactive response time charts
+- Responsive, theme-adaptive UI
+- Customizable status page and domain (CNAME support)
+- Optional password protection
+- JSON API for real-time status data
+
+## 📦 Template & Upstream
+
+This project is based on the official [UptimeFlare template](https://github.com/lyc8503/UptimeFlare). For setup instructions, advanced configuration, and documentation, see the [UptimeFlare Wiki](https://github.com/lyc8503/UptimeFlare/wiki).
+
+## 🖼️ Screenshots
 
 ![Desktop, Light theme](docs/desktop.png)
 
-## ⚡Quickstart / 📄Documentation
+## 📝 License
 
-Please refer to [Wiki](https://github.com/lyc8503/UptimeFlare/wiki)
-
-## New features (TODOs)
-
-- [x] Specify region for monitors
-- [x] TCP `opened` promise
-- [x] Use apprise to support various notification channels
-- [x] ~~Telegram example~~
-- [x] ~~[Bark](https://bark.day.app) example~~
-- [x] ~~Email notification via Cloudflare Email Workers~~
-- [x] Improve docs by providing simple examples
-- [x] Notification grace period
-- [ ] SSL certificate checks
-- [x] ~~Self-host Dockerfile~~
-- [x] Incident history
-- [x] Improve `checkLocationWorkerRoute` and fix possible `proxy failed`
-- [x] Groups
-- [x] Remove old incidents
-- [x] ~~Known issue~~: `fetch` doesn't support non-standard port (resolved after CF update)
-- [x] Compatibility date update
-- [x] Scheduled Maintenance 
-- [ ] Update wiki/README and add docs for dev
-- [ ] Migration to Terraform Cloudflare provider version 5.x
-- [ ] Cloudflare D1 database
+See [LICENSE](LICENSE) for details.

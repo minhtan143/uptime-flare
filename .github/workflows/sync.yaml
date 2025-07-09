@@ -31,6 +31,7 @@ jobs:
         run: |
           cat uptime.config.ts
           cp uptime.config.ts /tmp/origin.config.ts
+          cp README.md /tmp/origin.README.md
 
       - name: Sync upstream changes
         id: sync
@@ -45,7 +46,10 @@ jobs:
           # Clean current repo and update
           git rm -rf '*'
           cp -r /tmp/latest/. .
+
           cp /tmp/origin.config.ts uptime.config.ts
+          cp /tmp/origin.README.md README.md
+
           git add .
           git commit -m "Sync latest code from upstream"
           git push
